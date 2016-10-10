@@ -5,6 +5,8 @@ var moment = require('moment');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 function getDates(input) {
   var date = new Date(input);
   var monthNames = ["January", "February", "March", "April", "May", "June",
@@ -32,4 +34,6 @@ app.use(function(request, response) {
   response.end(JSON.stringify(json));
 });
 
-app.listen(process.env.PORT);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
