@@ -32,6 +32,4 @@ app.use(function(request, response) {
   response.end(JSON.stringify(json));
 });
 
-app.listen(8080, function () {
-  console.log('app listening on port 8080');
-});
+app.listen(process.env.PORT);
