@@ -1,19 +1,20 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository" :  { 
-    "type" : "git"
-  , "url" : "https://github.com/LauraBrandt/timestamp-api.git"
+  "description": "A timestamp microservice, one of FreeCodeCamp's API challenges",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LauraBrandt/timestamp-api.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "LauraBrandt",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "moment": "^2.15.1"
+    "moment": "^2.18.1",
+    "path": "^0.12.7"
   }
 }
