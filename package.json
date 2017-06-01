@@ -8,9 +8,10 @@
     "url": "https://github.com/LauraBrandt/timestamp-api.git"
   },
   "scripts": {
+	"start": "node app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "LauraBrandt",
+  "author": "Laura Brandt",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",

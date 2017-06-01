@@ -1,8 +1,12 @@
+'use strict';
+
 var express = require('express');
 var path = require('path');
 var moment = require('moment');
 
 var app = express();
+
+var port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -13,6 +17,7 @@ app.get('/', function(req, res){
 app.get('/:timestamp', function(req, res){
    res.writeHead(200, { "Content-Type": "text/plain" });
    var timestamp = req.params.timestamp;
+   console.log(timestamp);
    var result = {
      unix: null,
      natural: null
@@ -28,4 +33,6 @@ app.get('/:timestamp', function(req, res){
    res.end(JSON.stringify(result));
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(port, function() {
+	console.log("Listening on port", port);
+});	
