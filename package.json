@@ -13,7 +13,7 @@
   "author": "LauraBrandt",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.15.3",
     "moment": "^2.18.1",
     "path": "^0.12.7"
   },
