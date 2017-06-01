@@ -2,23 +2,14 @@
     font-family: Helvetica, Arial;
     padding-left: 7%;
     padding-right: 7%;
-    padding-top: 0.5%;
-    color: #222;
-}
-
-h1, h2, h3 {
-    font-weight: normal;
-}
-
-h3 {
-    padding-left: 2%;
+    padding-top: 1%;
+    color: #333;
 }
 
 code {
-    color: #ee2244;
     padding-left: 2%;
 }
 
 li {
-    padding: 0.3em 0;
+    padding: 0.2em 0;
 }
